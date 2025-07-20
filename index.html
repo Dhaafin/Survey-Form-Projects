@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Vehicle Research Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Autonomous Vehicle Research Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the future of autonomous vehicles!</p>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" id="number" name="age" min="18" max="99" placeholder="e.g., 25">
+        </div>
+
+        <div class="form-group">
+            <label for="dropdown">What is your current role or interest area?</label>
+            <select id="dropdown" name="role" required>
+                <option disabled selected value>Select an option</option>
+                <option value="student">Student</option>
+                <option value="engineer">Engineer</option>
+                <option value="researcher">Researcher</option>
+                <option value="enthusiast">Enthusiast</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>How do you primarily learn about new technologies?</label>
+            <label for="online-courses">
+                <input type="radio" id="online-courses" name="learning-pref" value="online-courses"> Online Courses
+            </label>
+            <label for="articles-blogs">
+                <input type="radio" id="articles-blogs" name="learning-pref" value="articles-blogs"> Articles/Blogs
+            </label>
+            <label for="research-papers">
+                <input type="radio" id="research-papers" name="learning-pref" value="research-papers"> Research Papers
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>What aspects of autonomous vehicles are you most interested in? (Select all that apply)</label>
+            <label for="perception">
+                <input type="checkbox" id="perception" name="interest" value="perception"> Perception (sensors, computer vision)
+            </label>
+            <label for="path-planning">
+                <input type="checkbox" id="path-planning" name="interest" value="path-planning"> Path Planning & Navigation
+            </label>
+            <label for="control-systems">
+                <input type="checkbox" id="control-systems" name="interest" value="control-systems"> Control Systems
+            </label>
+            <label for="safety-security">
+                <input type="checkbox" id="safety-security" name="interest" value="safety-security"> Safety & Security
+            </label>
+            <label for="communication">
+                <input type="checkbox" id="communication" name="interest" value="communication"> Communication (e.g., LoRa, 5G)
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label for="comments">Any additional comments or suggestions?</label>
+            <textarea id="comments" name="comments" rows="5" placeholder="Share your thoughts here..."></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
